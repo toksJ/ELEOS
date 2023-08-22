@@ -112,22 +112,22 @@ struct Home: View {
                                 })
                             }
                             
-                                Section("More"){
-                                    NavigationLink(destination: CreatorsView(), label: {
-                                        Text("About us")
-                                    })
-                                }
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
+                            Section("More"){
+                                NavigationLink(destination: CreatorsView(), label: {
+                                    Text("About us")
+                                })
+                            }
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -226,96 +226,109 @@ struct Home: View {
                     NavigationLink(destination: SupportView(), label: {
                         Text("Contact us!")
                         Image(systemName: "envelope").offset(x: 175)
-                        
-                        
-                    })        }
+                    }
+                    )
+                }
+            }
+        }
+        
+        //        let email = "eleosmanaging@gmail.com"
+        //
+        //        if let url = URL(string: "mailto:\(email)") {
+        //            if #available(iOS 10.0, *) {
+        //                UIApplication.shared.open(url)
+        //            } else {
+        //                UIApplication.shared.openURL(url)
+        //
+        //            }
+        //        }
+        //            }
+        //email attempt
+    }
+    
+    
+    
+    
+    struct QuestionsView: View {
+        var body: some View {
+            Form {
+                Section("Questions") {
+                    
+                    Text("The questions only show up when ur a new member of the app! We evaluated ur self tolerance level based on ur answers to the questions that you wer asked.")
+                    
+                    
+                }
+                .multilineTextAlignment(.leading)
+                
             }
             
         }
     }
-}
-
-
-
-struct QuestionsView: View {
-    var body: some View {
-        Form {
-            Section("Questions") {
-                
-                    Text("The questions only show up when ur a new member of the app! We evaluated ur self tolerance level based on ur answers to the questions that you wer asked.")
+    struct ToDoListView: View {
+        var body: some View {
+            Form {
+                Section("To-Do List") {
                     
-                    
-                     }
-            .multilineTextAlignment(.leading)
-
-        }
-        
-    }
-}
-struct ToDoListView: View {
-    var body: some View {
-        Form {
-            Section("To-Do List") {
-                
                     Text("The to do lists purpose is to help u organize ur schedule and chores a bit better by allowing u to add descriptions, priorities ur to dos, and add dead lines.")
                     
-                  }
-            .multilineTextAlignment(.leading)
-
+                }
+                .multilineTextAlignment(.leading)
+                
+            }
+            
         }
-        
     }
-}
-struct DropsView: View {
-    var body: some View {
-        Form {
-            Section("Drops") {
-               
+    struct DropsView: View {
+        var body: some View {
+            Form {
+                Section("Drops") {
+                    
                     Text("Drops are a form of reward points u receive each time u cross of a certain amount of ur to dos. Drops will help u unlock certain plants and allow u to make these plants grow.")
                     
-                  }
-            .multilineTextAlignment(.leading)
-
-        }
-        
-    }
-}
-struct PlantsView: View {
-    var body: some View {
-        Form {
-            Section("Plants") {
-                
-                Text("The plants can be unlocked and grown by the drops u earn when completing tasks. They aim to improve ur responsibility level by keeping them alive! ")
+                }
+                .multilineTextAlignment(.leading)
                 
             }
-            .multilineTextAlignment(.leading)
+            
         }
-        
     }
-}
-struct CreatorsView: View {
-    var body: some View {
-        Form {
-            Section("About us") {
-                
-                Text("Hi! We are the creators of this app.     Our sole purpose is to help our app users develop personal skills,                        such as: self tolerance, discipline, self developement, responsibility, etc.        We put all our hard work on this application and we tried our best to  make it as perfect as possible.              We hope you like it!!                 Remember: Personal development is a journey, not a destination! :) ")
-                
+    struct PlantsView: View {
+        var body: some View {
+            Form {
+                Section("Plants") {
+                    
+                    Text("The plants can be unlocked and grown by the drops u earn when completing tasks. They aim to improve ur responsibility level by keeping them alive! ")
+                    
+                }
+                .multilineTextAlignment(.leading)
             }
-            .multilineTextAlignment(.leading)
+            
         }
-        
     }
-}
-
-
-
-
-
-
-
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
+    struct CreatorsView: View {
+        var body: some View {
+            Form {
+                Section("About us") {
+                    
+                    Text("Hi! We are the creators of this app.     Our sole purpose is to help our app users develop personal skills,                        such as: self tolerance, discipline, self developement, responsibility, etc.        We put all our hard work on this application and we tried our best to  make it as perfect as possible.              We hope you like it!!                 Remember: Personal development is a journey, not a destination! :) ")
+                    
+                }
+                .multilineTextAlignment(.leading)
+            }
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    struct Home_Previews: PreviewProvider {
+        static var previews: some View {
+            Home()
+        }
     }
 }
