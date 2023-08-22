@@ -17,11 +17,7 @@ struct ContentView: View {
                                 Text("Home")
                             }
                     
-                        ToDoList()
-                            .tabItem {
-                                Image(systemName: "list.bullet.below.rectangle")
-                                Text("To Do List")
-                            }
+                       
                         Plants()
                             .tabItem {
                                 Image(systemName: "xmark.bin")
