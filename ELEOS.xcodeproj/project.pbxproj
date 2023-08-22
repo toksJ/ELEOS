@@ -38,6 +38,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4ABF7F02A9556A1003F2AD6 /* Plants */ = {
+			isa = PBXGroup;
+			children = (
+				C59E2F9B2A94A19E008F4791 /* Plants.swift */,
+			);
+			path = Plants;
+			sourceTree = "<group>";
+		};
+		C4ABF7F12A955729003F2AD6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C59E2F902A94A0AA008F4791 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C4ABF7F22A95575A003F2AD6 /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				C59E2F9D2A94A1D2008F4791 /* Schedule.swift */,
+			);
+			path = schedule;
+			sourceTree = "<group>";
+		};
 		EC58887B2A93E20600FF3A5A = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +83,9 @@
 			children = (
 				EC5888872A93E20600FF3A5A /* ELEOSApp.swift */,
 				EC5888892A93E20600FF3A5A /* ContentView.swift */,
-				C59E2F902A94A0AA008F4791 /* Home.swift */,
-				C59E2F9B2A94A19E008F4791 /* Plants.swift */,
-				C59E2F9D2A94A1D2008F4791 /* Schedule.swift */,
+				C4ABF7F12A955729003F2AD6 /* Home */,
+				C4ABF7F02A9556A1003F2AD6 /* Plants */,
+				C4ABF7F22A95575A003F2AD6 /* schedule */,
 				EC58888D2A93E20900FF3A5A /* Preview Content */,
 			);
 			path = ELEOS;
