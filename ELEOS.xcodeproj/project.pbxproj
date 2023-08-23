@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4F74F6F2A959B8100A0BBEA /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F74F6E2A959B8100A0BBEA /* Todo.swift */; };
 		C59E2F912A94A0AA008F4791 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59E2F902A94A0AA008F4791 /* Home.swift */; };
 		C59E2F9C2A94A19E008F4791 /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59E2F9B2A94A19E008F4791 /* Plants.swift */; };
 		C59E2F9E2A94A1D2008F4791 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59E2F9D2A94A1D2008F4791 /* Schedule.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4F74F6E2A959B8100A0BBEA /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		C59E2F902A94A0AA008F4791 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C59E2F9B2A94A19E008F4791 /* Plants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
 		C59E2F9D2A94A1D2008F4791 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
@@ -62,10 +64,19 @@
 			path = schedule;
 			sourceTree = "<group>";
 		};
+		C4F74F712A959B9F00A0BBEA /* todo */ = {
+			isa = PBXGroup;
+			children = (
+				C4F74F6E2A959B8100A0BBEA /* Todo.swift */,
+			);
+			path = todo;
+			sourceTree = "<group>";
+		};
 		EC58887B2A93E20600FF3A5A = {
 			isa = PBXGroup;
 			children = (
 				EC5888862A93E20600FF3A5A /* ELEOS */,
+				C4F74F712A959B9F00A0BBEA /* todo */,
 				EC5888852A93E20600FF3A5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC58888A2A93E20600FF3A5A /* ContentView.swift in Sources */,
+				C4F74F6F2A959B8100A0BBEA /* Todo.swift in Sources */,
 				C59E2F9C2A94A19E008F4791 /* Plants.swift in Sources */,
 				C59E2F9E2A94A1D2008F4791 /* Schedule.swift in Sources */,
 				C59E2F912A94A0AA008F4791 /* Home.swift in Sources */,

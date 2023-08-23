@@ -20,13 +20,19 @@ struct ContentView: View {
                        
                         Plants()
                             .tabItem {
-                                Image(systemName: "xmark.bin")
+                                Image(systemName: "leaf.fill")
                                 Text("Plants")
                             }
                         Schedule()
                             .tabItem {
-                                Image(systemName: "doc.text.image")
+                                Image(systemName: "calendar.badge.clock")
                                 Text("Schedule")
+                            }
+                        
+                        Todo()
+                            .tabItem {
+                                Image(systemName: "list.bullet.clipboard")
+                                Text("To-do")
                             }
                     }
             
